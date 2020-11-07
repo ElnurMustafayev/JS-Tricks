@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Number-font";
+  src: url("../Fonts/Numbers/BigShouldersStencilText-Black.ttf");
+}
+
+@font-face {
+  font-family: "Symbol-font";
+  src: url("../Fonts/Symbols/Oswald-VariableFont_wght.ttf");
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  background-color: #5c5c5c;
+}
+
+body .number {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Number-font";
+  background: white;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(49%, white), color-stop(50%, #b6b6b69b), color-stop(51%, white));
+  background: linear-gradient(180deg, white 49%, #b6b6b69b 50%, white 51%);
+  border: 1px solid #9c9c9c73;
+  border-radius: 15px;
+  width: 60px;
+  height: 120px;
+}
+
+body .number > * {
+  font-size: 65px;
+}
+
+body .symbol {
+  font-family: "Symbol-font";
+  font-size: 50px;
+  padding: 0px 10px;
+}
+/*# sourceMappingURL=Styles.css.map */
