@@ -1,0 +1,20 @@
+body {
+  background-color: violet;
+  width: 100vw;
+  height: 100vh;
+}
+
+body .cursor, body #cursor {
+  position: absolute;
+  left: -200px;
+  right: -200px;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+
+body #cursor {
+  background: radial-gradient(circle, #f696f6 0%, #f67df60a 50%);
+}
+/*# sourceMappingURL=Styles.css.map */

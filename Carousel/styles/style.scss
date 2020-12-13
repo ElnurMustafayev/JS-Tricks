@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400;700;800&display=swap');
+$default_ff: 'JetBrains Mono', monospace;
+
+body {
+    font-family: $default_ff;
+
+    #carousel {
+        display: block;
+        background-color: transparent;
+        margin: auto;
+        width: 500px;
+        height: 300px;
+        margin-bottom: 30px;
+        position: relative;
+
+        // I M A G E
+        img {
+            position: absolute;
+            width: 500px;
+            height: 300px;
+            z-index: 1;
+            transition: 0.3s;
+        }
+
+        // P A G I N A T I O N
+        .pagination {
+            position: absolute;
+            bottom: -25px;
+            right: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            z-index: 2;
+            font-weight: bold;
+            color: black;
+        }
+
+        // C O R N E R      B U T T O N S
+        .fas {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s;
+            color: #c5c5c5;
+            background-color: #5a5a5a17;
+            z-index: 2;
+            border: none;
+            outline: none;
+            
+            &::before {
+                transform: scale(2);
+            }
+
+            &:hover {
+                cursor: pointer;
+                background-color: #5a5a5a33;
+            }
+
+            &:active {
+                cursor: pointer;
+                transition: 0.1s;
+                background-color: #5a5a5a70;
+            }
+        }
+
+        // LEFT
+        .fa-caret-left {
+            left: 0;
+        }
+        // RIGHT
+        .fa-caret-right {
+            right: 0;
+        }
+    }
+}
